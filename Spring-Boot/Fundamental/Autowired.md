@@ -22,13 +22,16 @@ Recommended approach.
 
 Injects dependencies via setter methods.
 Useful when dependencies are optional.
-🆚 Constructor Injection vs Field Injection
-Feature	Constructor Injection	Field Injection (@Autowired)
-Visibility of dependencies	High (explicit)	Low (implicit)
-Testability	Easy	Harder
-Immutability	Supports final	No
-Required dependencies	Enforced	Optional
-Readability	Clear	Less clear
+## 🆚 Constructor Injection vs Field Injection
+
+| Feature                    | Constructor Injection       | Field Injection (`@Autowired`) |
+|----------------------------|-----------------------------|--------------------------------|
+| **Visibility of dependencies** | High (explicit)              | Low (implicit)                 |
+| **Testability**               | Easy                         | Harder                         |
+| **Immutability**              | Supports final fields         | No                             |
+| **Required dependencies**     | Enforced                     | Optional                       |
+| **Readability**               | Clear                        | Less clear                     |
+
 ✅ Best Practice
 Use constructor injection whenever possible. It’s cleaner, safer, and more testable.
 
